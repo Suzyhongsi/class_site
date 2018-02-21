@@ -42,12 +42,13 @@ html{
 }
 
 .seconds {
-  background: #000;
-  height: 45%;
+  background: yellow;
+  height: 5px;
   left: 49.5%;
   position: absolute;
   top: 14%;
   transform-origin: 50% 80%;
-  width: 1%;
+  width: 5px;
+  border-radius: 50%;
   z-index: 8;
 }
