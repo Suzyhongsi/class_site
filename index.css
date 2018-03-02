@@ -61,7 +61,7 @@ div {
     color: #ffffff;
 }
 #header{
-position: absolute;
+position: fixed;
   background-color:white;
   width:100%;
   height:100px;
@@ -70,26 +70,26 @@ position: absolute;
 }
 
 	#name{
-	left: 250px;
+	left: 13vw;
 	width: 108px;
-	position: absolute;
+	position: relative;
 	top: 20px;
 	font: 22px/1.46em 
 	}
 
 	#portfolio{
-	left: 250px;
+	left: 13vw;
 	width: 158px;
-	position: absolute;
-	top: 53px;
+	position: relative;
+	top: 20px;
 	}
 
 	#home{
-	left:780px;
-	top:53px;
+	left:57vw;
+	top:20px;
 	width: 69px;
 	height: 30px;
-	position: absolute;
+	position: relative;
 	box-sizing: border-box; 
 	overflow: visible;
 	}
