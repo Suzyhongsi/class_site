@@ -83,10 +83,14 @@ position: fixed;
 	position: relative;
 	top: 20px;
 	}
-
-	#home{
-	left:57vw;
+#links{
+	left:50vw;
 	top:20px;
+	width:600px;
+}
+	#home{
+	left:10px;
+	top:0px;
 	width: 69px;
 	height: 30px;
 	position: relative;
