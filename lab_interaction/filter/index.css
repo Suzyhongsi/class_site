@@ -1,0 +1,77 @@
+html{
+	overflow: hidden;
+}
+
+
+.contaion{
+	width:1241px;
+	height:100%;
+	margin: auto;
+}
+
+.one{
+	position: relative;
+	right:210px;
+	top:-100px;
+	width:360px;
+}
+
+.two{
+
+	position: relative;
+	right:540px;
+	top:-100px;
+	width:760px;
+}
+
+.three{
+
+	position: relative;
+	left:400px;
+	top:-955px;
+	width:500px;
+}
+
+.four{
+position: relative;
+	left:285px;
+	top:-960px;
+	width:550px;
+}
+
+.five{
+
+position: relative;
+	left:800px;
+	top:-1400px;
+	width:360px;
+
+}
+
+.six{
+position: relative;
+	left:270px;
+	top:-1320px;
+	width:360px;
+}
+
+.seven{
+position: relative;
+	right:800px;
+	top:-1360px;
+	width:360px;
+}
+
+.eight{
+	position: relative;
+	left:190px;
+	top:-2000px;
+	width:320px;
+}
+
+.nine{
+	position: relative;
+	left:-200px;
+	top:-1970px;
+	width:200px;
+}
