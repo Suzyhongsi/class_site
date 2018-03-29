@@ -53,5 +53,15 @@
     outline: none;
 }
 
+.select-style:after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-color: black transparent transparent transparent;
+}
 
 
