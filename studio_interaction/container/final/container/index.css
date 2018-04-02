@@ -1,0 +1,47 @@
+html{
+	align-items: center;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+	margin-top: 25vh;
+}
+
+img{
+	width:300px;
+}
+.one{
+	position: relative;
+	margin: none;
+}
+.two{
+	position: relative;
+	top:140px;
+	left:-70px;
+	margin: none;
+}
+.three{
+	position: relative;
+	top:140px;
+	left:100px;
+	margin: none;
+}
+.four{
+	position: relative;
+	top:-259px;
+	left:475px;
+	margin: none;
+}
+.five{
+	position: relative;
+	top:10px;
+	left:170px;
+	margin: none;
+}
+
+.six{
+	position: relative;
+	top:-257px;
+	left:335px;
+	margin: none;
+}

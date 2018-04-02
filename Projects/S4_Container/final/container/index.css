@@ -1,0 +1,78 @@
+html{
+	align-items: center;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+	margin-top: 25vh;
+}
+
+img{
+	width:300px;
+}
+.one{
+	position: relative;
+	margin: none;
+}
+.two{
+	position: relative;
+	top:140px;
+	left:-70px;
+	margin: none;
+}
+.three{
+	position: relative;
+	top:140px;
+	left:100px;
+	margin: none;
+}
+.four{
+	position: relative;
+	top:-259px;
+	left:475px;
+	margin: none;
+}
+.five{
+	position: relative;
+	top:10px;
+	left:170px;
+	margin: none;
+}
+
+.six{
+	position: relative;
+	top:-257px;
+	left:335px;
+	margin: none;
+}
+
+
+
+#hexagon {
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}

@@ -1,0 +1,117 @@
+html,body{
+	margin: 0px;
+	width: 100%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #d8d0c5;
+}
+
+.background{
+	margin:0px;
+	width:100%;
+}
+
+#ice{
+	margin:0px;
+	position:absolute;
+	width:60%;
+	top:600px;
+	left:0px;
+	opacity:0.6;
+}
+
+@keyframes oPacity{
+	0%{
+		opacity: 0;
+
+	}
+
+	50%{
+		opacity: 1;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+#topice{
+	animation-name: oPacity;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	margin:0px;
+	position:absolute;
+	width:100%;
+	left:0px;
+	opacity:0.6;
+}
+
+@keyframes cookieRun
+{
+0%{
+	left:-500px;
+
+}
+
+100%{
+	left:100vw;
+}
+}
+
+
+
+#cherrycookie{
+	animation-name: cookieRun;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	margin:0px;
+	position:absolute;
+	left:0px;
+	height:50%;
+	top:350px;
+}
+
+@keyframes Fall{
+	0%{
+		top:-100px;
+	}
+
+25%{
+transform: rotate(30deg);
+}
+
+75%{
+transform: rotate(-50deg);
+}
+
+	100%{
+		top:100vh;
+	}
+}
+
+.cherry{
+	animation-name: Fall;
+	animation-iteration-count: infinite;
+	position: absolute;
+}
+
+.c1{
+	animation-duration: 5s;
+	left:20px;
+	height:200px;
+}
+
+
+.c2{
+	animation-duration: 2.5s;
+	left:300px;
+	height:200px;
+}
+
+.c3{
+	animation-duration: 7.5s;
+	left:500px;
+	height:250px;
+}

@@ -1,0 +1,54 @@
+html,body{
+	margin: 0px;
+	width: 100%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #d8d0c5;
+}
+
+.background{
+	margin:0px;
+	width:100%;
+}
+
+#ice{
+	margin:0px;
+	position:absolute;
+	width:60%;
+	top:600px;
+	left:0px;
+	opacity:0.6;
+}
+
+#topice{
+	margin:0px;
+	position:absolute;
+	width:100%;
+	left:0px;
+	opacity:0.6;
+}
+
+@keyframes cookieRun
+{
+0%{
+	left:-100px;
+}
+
+100%{
+	left:1300px;
+}
+}
+
+
+
+#cherrycookie{
+	animation-name: cookieRun;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	margin:0px;
+	position:absolute;
+	left:0px;
+	height:400px;
+}
