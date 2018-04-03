@@ -12,4 +12,15 @@ p{
 	margin:auto;
 }
 
+div{
+	position: relative;
+	width:1000px;
+	margin: auto;
+}
+img{
+	width:20px;
+	position: absolute;
+	top:0px;
+	right:150px;
+}
 
