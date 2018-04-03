@@ -1,10 +1,19 @@
+html{
+    overflow: scroll;
+}
 .flex-container {
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-55%, -15%);
+    width:1200px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
     align-content: flex-start;
     align-items: flex-start;
+    margin:auto;
 }
     
  .flex-items-default {
@@ -12,27 +21,51 @@
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 0;
-    margin: 5px;
-
-}
-
-.all{
+    margin: 10px;
+    margin-bottom: 70px;
+    position: relative;
     text-align: center;
-    width:200px;
-    height:80px;
-    margin: 5px;
-    font-size: 20px;
-    border-style: solid;
-    border-width: 5px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
+
+ .flex-items-default2 {
+
+    height:100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+    margin: 10px;
+    margin-bottom: 70px;
+    position: relative;
+    left:110px;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hexagon{
+    width:200px;
+}
+
 
 .select-style {
-    border: 5px solid black;
-    width: 98vw;
+    border: 7px solid black;
+    width: 93vw;
     height: 30px;
     overflow: hidden;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 15px 0px 15px 10px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+
 }
 
 .select-style select {
@@ -43,9 +76,8 @@
     box-shadow: none;
     background: transparent;
     background-image: none;
-    -webkit-appearance: none;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
 
 }
 
@@ -56,12 +88,19 @@
 .select-style:after {
   position: absolute;
   content: "";
-  top: 17px;
-  right: 20px;
+  top: 35px;
+  right: 100px;
   width: 0;
   height: 0;
   border: 20px solid transparent;
   border-color: black transparent transparent transparent;
 }
+
+.select-style:hover {
+  border: transparent;
+  color: white;
+  padding: 15px 5px 15px 25px;
+}
+
 
 
