@@ -1,0 +1,10 @@
+#pic {
+  width: 300px;
+  display: block;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}

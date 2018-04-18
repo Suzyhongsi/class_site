@@ -1,0 +1,13 @@
+html,body{
+	width:750px;
+	height:1334px;
+}
+img{
+	width:100px;
+}
+div {
+width: 50px;
+height: 50px;
+position:fixed;
+    
+}

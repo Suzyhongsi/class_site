@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="index.js"></script>
+
+
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<iframe id="music" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209167344&color=%23adccc4&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<script>
+
+// $(function() {
+//   $(window).scroll(function () {
+  //    if ($(this).scrollTop() > 500) {
+  //       $('body').addClass('changeColor')
+    //  }
+      //if ($(this).scrollTop() < 500) {
+        // $('body').removeClass('changeColor')
+      //}
+      //if ($(this).scrollTop() < 500 > 1000) {
+        // $('body').addClass('changeColor2')
+      //}
+
+   //});
+//}); 
+
+
+// css .changeColor{
+	//background-color: #CC173E;
+//}
+
+//.changeColor2{
+//	background-color: blue;
+//}
+
+$(window).scroll(function() {
+  
+  var $window = $(window),
+      $body = $('body'),
+      $panel = $('.panel');
+  var scroll = $window.scrollTop() + ($window.height() / 3);
+ 
+  $panel.each(function () {
+    var $this = $(this);
+ 
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+          
+      $body.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+       
+      $body.addClass('color-' + $(this).data('color'));
+    }
+  });    
+  
+}).scroll();
+
+var hue = 0;
+document.ontouchmove = function(event){
+	//console.log(event.pageX);
+	var a = document.createElement("div");
+	a.className = "circle";
+	a.style.top = event.pageY +"px";
+	a.style.left = event.pageX + "px";
+	var hue = event.pageX
+	a.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
+	document.body.appendChild(a);
+	hue= hue+1;
+}
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+function alertBox() {
+    alert("#F2293A");
+}
+
+function alertBoxTwo() {
+    alert("#F19031");
+}
+function alertBoxThree() {
+    alert("#FAEB33");
+}
+function alertBoxFour() {
+    alert("#4DCF42");
+}
+function alertBoxFive() {
+    alert("#2F8FED");
+}
+function alertBoxSix() {
+    alert("#4332CF");
+}
+function alertBoxSeven() {
+    alert("#7A4EAB");
+}
+function alertBoxEight() {
+    alert("#FF00FF");
+}
+function alertBoxNine() {
+    alert("#FFC0CB");
+}
+
+
+</script>
+
+<div class="panel popup" onclick="myFunction()" data-color="white">
+  <h2>SCROLL</h2> <span class="popuptext" id="myPopup">#FFFFFF</span>
+</div>
+
+<div class="panel" data-color="red" onclick="alertBox()">
+  <h2>RED</h2>
+</div>
+<div class="panel" data-color="orange" onclick="alertBoxTwo()">
+  <h2>ORANGE</h2>
+</div>
+<div class="panel" data-color="yellow" onclick="alertBoxThree()">
+  <h2>YELLOW</h2>
+</div>
+<div class="panel" data-color="green" onclick="alertBoxFour()">
+  <h2>GREEN</h2>
+</div>
+<div class="panel" data-color="blue" onclick="alertBoxFive()">
+  <h2>BLUE</h2>
+</div>
+<div class="panel" data-color="indigo" onclick="alertBoxSix()">
+  <h2>INDIGO</h2>
+</div>
+<div class="panel" data-color="violet" onclick="alertBoxSeven()">
+  <h2>VIOLET</h2>
+</div>
+<div class="panel" data-color="magenta" onclick="alertBoxEight()">
+  <h2>MAGENTA</h2>
+</div>
+<div class="panel" data-color="pink" onclick="alertBoxNine()">
+  <h2>PINK</h2>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
