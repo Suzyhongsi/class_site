@@ -2,7 +2,10 @@ html{
 	overflow: hidden;
 }
 
-
+select{
+	position: absolute;
+	left:50vw;
+}
 .contaion{
 	width:1241px;
 	height:100%;
