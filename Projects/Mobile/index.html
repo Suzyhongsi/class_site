@@ -75,6 +75,18 @@ document.ontouchmove = function(event){
 	document.body.appendChild(a);
 	hue= hue+1;
 }
+var hue = 0;
+document.onmousemove = function(event){
+  //console.log(event.pageX);
+  var a = document.createElement("div");
+  a.className = "circle";
+  a.style.top = event.pageY +"px";
+  a.style.left = event.pageX + "px";
+  var hue = event.pageX
+  a.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
+  document.body.appendChild(a);
+  hue= hue+1;
+}
 
 function myFunction() {
     var popup = document.getElementById("myPopup");

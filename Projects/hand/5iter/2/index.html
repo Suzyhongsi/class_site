@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title></title>
+</head>
+<body>
+	<div class="image-wrapper"></div>
+
+</body>
+<style>
+	body {
+	position: relative;
+}
+
+.image-wrapper {
+	position: absolute;
+	transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.image-wrapper.fade-out {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+html{
+	overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+
+		img{
+			width:100px;
+		}
+
+	}
+
+@media screen and (max-width: 375px) {
+
+		img{
+			width:100px;
+		}
+
+	}
+</style>
+<script>
+
+	$(function(){
+	var fadeDelay = 4000;
+	var fadeDuration = 1000;
+
+
+
+    $(document).click(function(e){
+    	var imagess =["asset/1.png","asset/2.png","asset/3.png","asset/4.png","asset/5.png"]
+		var imagess = imagess[Math.floor(Math.random()*imagess.length)]
+
+		var div = $('<div class="image-wrapper">')
+			.css({
+				"left": e.pageX + 'px',
+				"top": e.pageY + 'px'
+			})
+			.append("<img src='" + imagess + "'></img>")
+			.appendTo(document.body);
+				
+
+		setTimeout(function() {
+			div.addClass('fade-out');			
+			setTimeout(function() { div.remove(); }, fadeDuration);
+		}, fadeDelay);
+    });
+});
+</script>
+		<script type='text/javascript' src='bug-min.js'></script>
+		<script type='text/javascript'>
+			// default fruit fly bug:
+			new BugController({
+			});
+
+			// default spiders:
+			new SpiderController({
+			});
+		</script>
+
+</html>
