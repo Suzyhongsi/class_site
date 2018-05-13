@@ -10,7 +10,7 @@
 <style type="text/css">
 body
 {
-  background:#fb7474;
+  background:#a8ef95;
 }
 
 /* Waves */
@@ -152,7 +152,7 @@ body
 
 img{
 	width:50px;
-	height:50px;
+	height:40px;
 }
 
 @keyframes marquee
@@ -161,112 +161,65 @@ img{
 	to{transform: translateX(0vw); opacity:1;}
 }
 
+h1{
+	position: absolute;
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 50px;
+	top:20vh;
+	left:5vw;
+	width: 700px;
+	color: white;
+}
 
+a{
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 50px;
+	color: white;
+	padding-right:50px;
+	text-decoration: none;
+}
 
+a:hover{
+	text-decoration: underline;
+}
+
+.links{
+	position: absolute;
+	display: flex;
+	width:700px;
+	top:32vh;
+	left:5vw;
+}
 
 h2{
-	position: relative;
-	top: 50vh;
-	opacity: 1;
-	font-family: "Arial", Arial, sans-serif;
-	font-size: 80px;
-	color: white;
-	animation: marquee;
-	animation-duration: 7s;
-	animation-iteration-count: 1;
-}
-
-.dropbtn {
 	position: absolute;
-	top: 20vh;
 	font-family: "Arial", Arial, sans-serif;
-	font-size: 80px;
+	font-size: 50px;
+	top:30vh;
+	left:5vw;
+	width: 700px;
 	color: white;
-	background-color: none;
-	animation: marquee;
-	animation-duration: 5s;
-	animation-iteration-count: 1;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-    text-decoration: underline;
+h3{
+  position: absolute;
+  font-family: "Arial", Arial, sans-serif;
+  font-size: 50px;
+  top:40vh;
+  left:5vw;
+  width: 700px;
+  color: white;
 }
 
-.dropdown {
-    position: absolute;
-    display: inline-block;
-
+h4{
+  position: absolute;
+  font-family: "Arial", Arial, sans-serif;
+  font-size: 50px;
+  top:50vh;
+  left:5vw;
+  width: 700px;
+  color: white;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    overflow: auto;
-    z-index: 1;
-    left: 50vw;
-    top:27vh;
-    width: 400px;
-}
-
-.dropdown-content a {
-    color: white;
-    padding:15px;
-    text-decoration: none;
-    display: block;
-    font-family: "Arial", Arial, sans-serif;
-    font-size: 40px;
-}
-
-.dropdown a:hover {text-decoration: underline;}
-
-.show {display:block;}
-
-
-.dropbtn2 {
-
-	position: absolute;
-	top: 50vh;
-	opacity: 1;
-	font-family: "Arial", Arial, sans-serif;
-	font-size: 80px;
-	color: white;
-	animation: marquee;
-	animation-duration: 7s;
-	animation-iteration-count: 1;
-}
-
-.dropbtn2:hover, .dropbtn2:focus {
-    text-decoration: underline;
-}
-
-.dropdown2 {
-    position: absolute;
-    display: inline-block;
-
-}
-
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    overflow: auto;
-    z-index: 1;
-    left: 50vw;
-    top:58vh;
-    width: 400px;
-}
-
-.dropdown-content2 a {
-    color: white;
-    padding:15px;
-    text-decoration: none;
-    display: block;
-    font-family: "Arial", Arial, sans-serif;
-    font-size: 40px;
-}
-
-.dropdown2 a:hover {text-decoration: underline;}
-
-.show2 {display:block;}
 
 </style>
 
@@ -293,22 +246,15 @@ h2{
 
 </body>
 
-<div class="dropdown">
-	<h1 onclick="myFunction()" class="dropbtn">PROJECTS</h1>
-		<div  id="myDropdown" class="dropdown-content">
-  	<a href="Projects/Lab/index.html">Lab Interaction</a>
-  	<a href="Projects/Studio/index.html">Studio Interaction</a>
+<a href="S2_LinkingTree/index.html"><div><h1>Linking Tree<h1></div></a>
 
-</div>
+<a href="S3_Clock/index.html"><div><h2>Clock<h2></div></a>
+
+<a href="S4_Container/index.html"><div><h3>Container Technologies<h3></div></a>
+
+<a href="S6_HandTechnologies/index.html"><div><h4>Hand Technologies<h4></div></a>
 
 
-<div class="dropdown2">
-	<h2 onclick="myFunctionT()" class="dropbtn2">WORKSHOPS</h2>
-		<div  id="myDropdown2" class="dropdown-content2">
-  	<a href="Workshops/Lab/index.html">Lab Interaction</a>
-  	<a href="Workshops/Studio/index.html">Studio Interaction</a>
-
-</div>
 
 
 <script type="text/javascript">
@@ -317,7 +263,7 @@ h2{
     createSnowflakes = function() {
       var qt = 10;
       for (var i = 0; i < qt; ++i) {
-        var $snowflake = $('<div class="snowflakes"><img src="asset/strawone"></div>');
+        var $snowflake = $('<div class="snowflakes"><img src="asset/greentea.png"></div>');
         $snowflake.css({
           'left': (Math.random() * $('#site').width()) + 'px',
           'top': (-Math.random() * $('#site').height()) + 'px'
@@ -358,39 +304,6 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function myFunctionT() {
-    document.getElementById("myDropdown2").classList.toggle("show2");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn2')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content2");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show2')) {
-        openDropdown.classList.remove('show2');
-      }
-    }
-  }
-}
 </script>
 
 </html>
